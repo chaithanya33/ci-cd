@@ -3,12 +3,12 @@ name: level2
 on:
   workflow_dispatch:
 
-jobs:
+jobs:          # if we declared in jobs level env variables os we can acess one job to 2 job so that i can see in job 2 
   level1:
     runs-on: ubuntu-latest
 
     env:
-      CITY: Hyderabad
+      CITY: Hyderabad     
       TRAINER: Chaithanya
 
     steps:
