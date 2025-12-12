@@ -1,4 +1,4 @@
-name: level1
+name: level2
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ jobs:
       TRAINER: Chaithanya
 
     steps:
-      - name: level1
+      - name: level2
         env:
           CITY: Hyderabad
           TRAINER: Chaitanya
