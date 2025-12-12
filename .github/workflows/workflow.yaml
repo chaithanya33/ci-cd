@@ -1,8 +1,7 @@
 name: level3
 
 on:
-  workflow_dispatch:   # in workflow we use env then accesed in all jobs we declare means
-
+  workflow_dispatch:   # if we delclared in workflow level env any job or any step
 env:
   CITY: Hyderabad
   TRAINER: chaithanya
@@ -15,10 +14,8 @@ jobs:
       - name: level3
         env:
           CITY: Hyderabad
-          TRAINER: Chaitanya
         run: |
           echo "welcome to $CITY"
-          echo "your trainer is $TRAINER"
-
+          
       - name: job2
-        run: echo "city is $CITY and trainer is $TRAINER"
+        run: echo " trainer is $TRAINER"
