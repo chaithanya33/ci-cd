@@ -1,7 +1,7 @@
 name: level2
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:    #workflow dispatch means we can normally triggered
 
 jobs:          # if we declared in jobs level env variables os we can acess one job to 2 job so that i can see in job 2 
   level1:
