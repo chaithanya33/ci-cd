@@ -1,1 +1,13 @@
 
+name: Artifact Upload and Download Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create file
+        run: echo "Data file" > data.txt
