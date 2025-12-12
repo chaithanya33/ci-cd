@@ -1,0 +1,24 @@
+name: level1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  level1:
+    runs-on: ubuntu-latest
+
+    env:
+      CITY: Hyderabad
+      TRAINER: Chaithanya
+
+    steps:
+      - name: level1
+        env:
+          CITY: Hyderabad
+          TRAINER: Chaitanya
+        run: |
+          echo "welcome to $CITY"
+          echo "your trainer is $TRAINER"
+
+      - name: next steps
+        run: echo "city is $CITY and trainer is $TRAINER"
