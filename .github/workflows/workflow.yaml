@@ -3,8 +3,8 @@ name: level3
 on:
   workflow_dispatch:   # if we delclared in workflow level env any job or any step
 env:
-  CITY: Hyderabad
-  TRAINER: chaithanya
+  CITY: hyderabad/mumbai
+  TRAINER: chaithanya/ch
 
 jobs:
   job1:
